@@ -14,12 +14,7 @@ Exercice simple d'algorithmie permettant de s'entraîner avec les boucles for
  	        ### 
  	       #O###
  	      ##O####
-       #O#####O# 
-      ####O#####O 
-     #####O#####O# 
-    ####O#####O####
-   #O#####O#####O###
-  ##O#####O#####O####
+
   
   
  
