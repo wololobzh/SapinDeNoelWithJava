@@ -1,5 +1,5 @@
 # SapinDeNoelWithJava
-Exercice simple d'algorithmie permettant de s'entraîner avec les boucles for
+Exercice simple d'algorithmie permettant de s'entraîner avec les boucles for.
 
 
   Le but de cet exercice est de travailler sur les boucles afin de dessiner dans
