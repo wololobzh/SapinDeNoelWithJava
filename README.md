@@ -8,7 +8,7 @@ Exercice simple d'algorithmie permettant de s'entraîner avec les boucles for
   programme. Les boules doivent être positionnées tout les 6 dièses comme expliqué dans la figure a.
   
   
-  Sapin d'une hauteur de 10 :
+  Sapin d'une hauteur de 4 :
  
  	         #
  	        ### 
