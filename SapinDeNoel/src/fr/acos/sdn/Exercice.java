@@ -2,21 +2,21 @@ package fr.acos.sdn;
 
 /**
  * Le but de cet exercice est de travailler sur les boucles afin de dessiner dans
- * un terminal un sapin de Noël avec ses boules (figure a). Il prendra en argument la hauteur du sapin 
- * qui est une variable du problème. Ce paramètre doit être fourni par l'utilisateur lors de l'exécution du
- * programme. Les boules doivent être positionnées tout les 6 dièses comme expliqué dans la figure a.
+ * un terminal un sapin de NoÃ«l avec ses boules (figure a). Il prendra en argument la hauteur du sapin 
+ * qui est une variable du problÃ¨me. Ce paramÃ¨tre doit Ãªtre fourni par l'utilisateur lors de l'exÃ©cution du
+ * programme. Les boules doivent Ãªtre positionnÃ©es tout les 6 diÃ¨ses comme expliquÃ© dans la figure a.
  * 
  * 
  * a) Hauteur 10
  *
-			#
-		   ### 
-		  #O###
-		 ##O####
-		#O#####O# 
-	   ####O#####O 
-	  #####O#####O# 
-	 ####O#####O####
+ *	    #
+ *	   ### 
+ *	  #O###
+ *	 ##O####
+ *	#O#####O# 
+ *     ####O#####O 
+ *    #####O#####O# 
+ *   ####O#####O####
  *  #O#####O#####O###
  * ##O#####O#####O####
  * 
@@ -26,41 +26,41 @@ package fr.acos.sdn;
 public class Exercice 
 {
 	/**
-	 * Variable servant de compteur afin de mettre une boule tout les six éléments.
+	 * Variable servant de compteur afin de mettre une boule tout les six Ã©lÃ©ments.
 	 */
 	private static int compteurBoule = 0;
 	
 	/**
-	 * Point d'entrée
+	 * Point d'entrÃ©e
 	 * 
-	 * @param args Pas utilisé.
+	 * @param args Pas utilisÃ©.
 	 */
 	public static void main(String[] args) 
 	{
-		//Appel de la fonction permettant de créer le sapin.
+		//Appel de la fonction permettant de crÃ©er le sapin.
 		createSapinDeNoel(60);
 	}
 	
 	/**
-	 * Cette fonction créer le sapin.
+	 * Cette fonction crÃ©er le sapin.
 	 * 
-	 * @param hauteur Hauteur de sapin désirée.
+	 * @param hauteur Hauteur de sapin dÃ©sirÃ©e.
 	 */
 	private static void createSapinDeNoel(int hauteur)
 	{
-		// Cette variable permet de gérer le nombre d'élément sur une ligne.
+		// Cette variable permet de gÃ©rer le nombre d'Ã©lÃ©ment sur une ligne.
 		int nombreElement = 1;
-		//Boucle qui s'exécute autant de fois que la hauteur désirée.
+		//Boucle qui s'exÃ©cute autant de fois que la hauteur dÃ©sirÃ©e.
 		for(int i = 1; i <= hauteur;i++)
 		{
 			//Fonction permettant d'afficher des espaces
-			//On enleve un espace à chaque echelon de sapin.
+			//On enleve un espace Ã  chaque echelon de sapin.
 			espace(80-i);
 			//Fonction permettant d'afficher des dieses.
 			diese(nombreElement);
-			//La ligne suivant aura 2 éléments supplémentaires.
+			//La ligne suivant aura 2 Ã©lÃ©ments supplÃ©mentaires.
 			nombreElement += 2;
-			//Retour à la ligne
+			//Retour Ã  la ligne
 			System.out.print("\n");
 		}
 	}
@@ -68,11 +68,11 @@ public class Exercice
 	/**
 	 *Cette fonction permet d'afficher des espaces sur une ligne.
 	 * 
-	 * @param nombre Nombre d'espaces désiré.
+	 * @param nombre Nombre d'espaces dÃ©sirÃ©.
 	 */
 	private static void espace(int nombre)
 	{
-		//Boucle faisant autant d'itérations que d'espace désiré.
+		//Boucle faisant autant d'itÃ©rations que d'espace dÃ©sirÃ©.
 		for(int i = 1; i <= nombre;i++)
 		{
 			//Affichage d'un espace.
@@ -83,26 +83,26 @@ public class Exercice
 	/**
 	 *Cette fonction permet d'afficher des dieses sur une ligne.
 	 * 
-	 * @param nombre Nombre de dieses désiré.
+	 * @param nombre Nombre de dieses dÃ©sirÃ©.
 	 */
 	private static void diese(int nombre)
 	{
-		//Boucle faisant autant d'itérations que de dieses désiré.
+		//Boucle faisant autant d'itÃ©rations que de dieses dÃ©sirÃ©.
 		for(int i = 1; i <= nombre;i++)
 		{
-			//Si on a déja affiché 5 dieses
+			//Si on a dÃ©ja affichÃ© 5 dieses
 			if(compteurBoule == 5)
 			{
 				//Alors on affiche une boule
 				System.out.print("O");
-				//Et on remet le compteur des dieses à 0.
+				//Et on remet le compteur des dieses Ã  0.
 				compteurBoule = 0;
 			}
 			else
 			{
 				//Sinon on affiche un diese
 				System.out.print("#");
-				//Et on incrémente le compteur des dieses.
+				//Et on incrÃ©mente le compteur des dieses.
 				compteurBoule++;
 			}
 		}
